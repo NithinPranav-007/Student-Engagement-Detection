@@ -4,11 +4,37 @@ __pycache__/
 *.pyo
 .venv/
 venv/
+env/
 
-# OS/editor files
+# Distribution and packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.whl
+
+# OS and editor files
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
 # Runtime and generated artifacts
 models/annotated_tmp*.mp4
+models/engagement_log.csv
 *.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model weights (large files — track with Git LFS if needed)
+# models/*.pt
+
+# Dataset (too large for version control)
+# dataset/train/
+# dataset/val/
+# dataset/fer2013.csv
